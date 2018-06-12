@@ -1,4 +1,4 @@
-# Projects
+Projects
 
 ## Programmable Deep In-Memory Computing (thesis)
 
