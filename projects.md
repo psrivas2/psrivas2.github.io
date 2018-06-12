@@ -1,3 +1,5 @@
+# Projects
+
 ## Programmable Deep In-Memory Computing (thesis)
 
 Supervisors: Prof. Vikram Adve and Prof. Naresh Shanbhag
