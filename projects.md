@@ -2,11 +2,15 @@
 
 Supervisors: Prof. Vikram Adve and Prof. Naresh Shanbhag
 
-* Goal: Bring novel in-memory computing to mainstream by using analog computation for energy efficiency
-* Designed PROMISE, a programmable analog accelerator for machine learning, its compiler and novel analog ISA
-* PROMISE embeds computation deep in SRAM bit cell array, thus avoiding expensive data transfers
-* PROMISE is orders of magnitude energy and delay efficient than CPUs and GPUs
-* 4.2x lower energy and 2.2x higher throughput than state of art digital ASICs for Machine Learning kernels
+Deep in-memory computing results show that they can provide orders of magnitude improvement (energy-delay product) over conventional digital accelerators (GPUs) as well as ASICs.
+We aim to solve the programmability challenges in order to bring these highly unconventional novel architectures to mainstream.
+
+Recently, we collaborated with architects of Compute Memory (CM, a deep in-memory computing architecture) to compile machine learning (ML) algorithms written in Julia programming language to CM. The outcome was the first programmable mixed signal accelerator for machine learning based on deep in-memory computing, called PROMISE. 
+
+Encouraged by our results, we will extend this work to port widely used ML DSLs like TensorFlow, PyTorch or MXNet to a system on a chip (SoC) comprised of multicore CPUs, multiple GPUs, and PROMISE.
+
+We plan to leverage our prior experience in designing HPVM, a parallel program representation for heterogeneous systems, designed to enable performance portability across popular parallel hardware such as GPUs, vector instructions sets, muticore CPUs and potentially FPGAs.
+We propose to extend HPVM to support mapping and code generation for an SoC with general purpose digital processors (multicore CPUs, and GPUs), and deep in-memory computing accelerator PROMISE. We propose to design novel scheduling algorithms at HPVM IR level to guarantee overall accuracy, throughput, and energy efficiency requirements of the application.
 
 ## HPVM: Heterogeneous Parallel Virtual Machine
 
